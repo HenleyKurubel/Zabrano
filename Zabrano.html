@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0"/>
+    <title>Zabrano Properties</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Zabrano Properties</h1>
+        <nav>
+            <div>
+                <a href="#about-us">About Us</a>
+                <a href="#properties">Listings</a>
+                <a href="#agents">Agents</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <form id="search-form">
+                <input type="search" id="search-bar" placeholder="Search....">
+                <button id="search-btn">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+     <section class="hero">
+        <h2><font color="white">Your Dream Home Awaits You</h2></font>
+        <P>Discover exceptional properties with Zabrano Properties. Where innovation meets real estate excellence, powered by local expertise and Future AI technology.</P>
+     </section>
+
+     <!-- About -->
+      <section id="about-us">
+      <h2>About Zabrano Properties</h2>
+      <P>Pioneering the future of real estate with innovation, professionalism and deep local market insight.</P>
+      <h2>Innovation Meets excellence</h2>
+        <p>At Zabrano Properties, we're not just selling properties. We're revolutionizing how real estate works. Our commitment to delivering exceptional property solutions is matched only by our vision for the future.</p>
+        <p>with our upcoming <b>'Padano AI Realty'</b> platform, we're preparing to offer Smart Valuations, Multilingual assistance, and Data Driven insights that will transform your property experience.</p>
+            <table style="border-collapse: collapse; width: 100%;">
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 10px; text-align: center; background-color: #f7f7f7;">
+                        <span style="font-size: 24px; font-weight: bold; color: #004080;">20+</span><br>
+                        <span style="font-size: 18px;">Properties Listed</span>
+                    </td>
+                    <td style="border: 1px solid #ccc; padding: 10px; text-align: center; background-color: #f7f7f7;">
+                        <span style="font-size: 24px; font-weight: bold; color: #004080;">10+</span><br>
+                        <span style="font-size: 18px;">Happy Clients</span>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="vision-container">
+                <h2>Our Vision</h2>
+                <p>"To be the leading real estate company that bridges traditional expertise with cutting edge AI technology,making property transactions smarter, faster, and more transparent for everyone."</p>
+                <div class="founder-info">
+                    <p><font color="black"><b>~Tatenda Craig Ngaliwa</p></b></font>
+                    <p><font color="black"><b>Founder, Zabrano Properties Pvt. Ltd.</p></b></font>
+                </div>
+            </div>
+        </section>
+
+     <!-- Properties Section-->
+      <section id="properties" class="section">
+        <h2>Featured Listings</h2>
+
+        <div class="filters">
+            <label for="price">Max Price:</label>
+            <select id="price">
+                <option value="">Any</option>
+                <option value="50000">$50,000</option>
+                <option value="100000">$100,000</option>
+                <option value="200000">$200,000</option>
+                <option value="300000">$300,000</option>
+                <option value="500000">$500,000</option>
+            </select>
+
+            <label for="location">Location:</label>
+            <select id="location">
+                <option value="">Any</option>
+                <option value="Harare">Harare</option>
+                <option value="Bulawayo">Bulawayo</option>
+                <option value="Masvingo">Masvingo</option>   
+            </select>
+
+            <label for="bedrooms">Bedrooms:</label>
+            <select id="bedrooms">
+                <option value="">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+            </select>
+
+            <button onclick="applyFilters()">Apply Filters</button>
+        </div>
+        <br>
+
+        <div class="properties">
+            <div class="property" data-price="14500" data-location="Bulawayo" data-bedrooms="2">
+                <div class="property-card">
+                    <!-- content -->
+                <div class="image-stack">
+                <img src="Project1.1.jpg" alt="image 1">
+                <img src="Project1.2.jpg" alt="image 2">
+                <img src="Project1.3.jpg" alt="image 3">
+                <img src="Project1.4.jpg" alt="image 4">
+                <img src="Project1.5.jpg" alt="image 5">
+                <img src="Project1.6.jpg" alt="image 6">
+                <img src="Project1.7.jpg" alt="image 7">
+                <img src="Project1.8.jpg" alt="image 8">
+                </div>
+                <h4>Cozy 2 Bedroom House with Endless Possibilities</h4>
+                <p><ul>
+                    <li>Located in Upper Rangemore, Bulawayo</li>
+                    <li>Has 2 Bedrooms</li>
+                    <li>Has 1 Bathroom</li>
+                    <li>Sitting on a 225sqm plot</li>
+                </ul></p>
+                <p>Price: $14,500<br><br>
+                <a href="#contact" class="btn">Intrested</a><br><br>
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="properties">
+        <div class="property" data-price="74500" data-location="Bulawayo" data-bedrooms="3">
+            <div class="property-card">
+                 <!-- content -->
+                <div class="image-stack">
+                <img src="Project2.1.jpg" alt="image 1">
+                <img src="Project2.2.jpg" alt="image 2">
+                <img src="Project2.3.jpg" alt="image 3">
+                <img src="Project2.4.jpg" alt="image 4">
+                <img src="Project2.5.jpg" alt="image 5">
+                <img src="Project2.6.jpg" alt="image 6">
+                <img src="Project2.7.jpg" alt="image 7">
+                <img src="Project2.8.jpg" alt="image 8">
+                <img src="Project2.9.jpg" alt="image 9">
+                </div>
+                <h4>Spacious Apartment building</h4>
+                <p><ul>
+                    <li>Located in Famona, Bulawayo</li>
+                    <li>Situated in the Ground floor</li>
+                    <li>Has 3 Bedrooms</li>
+                    <li>Has 1 Bathroom</li>
+                    <li>Has a Fitted Kitchen</li>
+                    <li>Enclosed Verandah</li>
+                </ul></p>
+                <p>Price: $74,500<br><br>
+                <a href="#contact" class="btn">Intrested</a><br><br>
+                </p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="properties">
+        <div class="property" data-price="95000" data-location="Bulawayo" data-bedrooms="3">
+            <div class="property-card">
+                 <!-- content -->
+                <div class="image-stack">
+                <img src="Project3.1.jpg" alt="image 1">
+                <img src="Project3.2.jpg" alt="image 2">
+                <img src="Project3.3.jpg" alt="image 3">
+                <img src="Project 3.4.jpg" alt="image 4">
+                <img src="Project3.5.jpg" alt="image 5">
+                <img src="Project3.6.jpg" alt="image 6">
+                <img src="Project3.7.jpg" alt="image 7">
+                <img src="Project3.8.jpg" alt="image 8">
+                <img src="Project3.9.jpg" alt="image 9">
+                </div>
+                <h4>Luxurious Family House</h4>
+                <p><ul>
+                    <li>Located in Barham Green, Bulawayo</li>
+                    <li>Has 3 Bedrooms</li>
+                    <li>Has a separate bathroom and toilet</li>
+                    <li>Has a Fitted Kitchen</li>
+                    <li>Has a Cottage with 3 rooms and a well fitted bathroom</li>
+                </ul></p>
+                <p>Price: $95,000<br><br>
+                <a href="#contact" class="btn">Intrested</a><br><br>
+                </p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="properties">
+      <div class="property" data-price="150000" data-location="Bulawayo" data-bedrooms="3">
+        <div class="property-card">
+                 <!-- content -->
+                <div class="image-stack">
+                <img src="Project4.1.jpg" alt="image 1">
+                <img src="Project4.2.jpg" alt="image 2">
+                <img src="Project4.3.jpg" alt="image 3">
+                <img src="Project4.4.jpg" alt="image 4">
+                <img src="Project4.5.jpg" alt="image 5">
+                <img src="Project4.6.jpg" alt="image 6">
+                <img src="Project4.7.jpg" alt="image 7">
+                <img src="Project4.8.jpg" alt="image 8">
+                <img src="Project4.9.jpg" alt="image 9">
+                </div>
+                <h4>Luxurious Family House</h4>
+                <p><ul>
+                    <li>Located in Famona, Bulawayo</li>
+                    <li>Has 3 Bedrooms</li>
+                    <li>Has a sunlight lounge and a main spacious lounge</li>
+                    <li>Has carpeted interiors</li>
+                    <li>Has a well appointed kitchen</li>
+                    <li>Has a refreshing swimming pool</li>
+                    <li>Has a reliable borehole and a water tank</li>
+                </ul></p>
+                <p>Price: $150,000<br><br>
+                <a href="#contact" class="btn">Intrested</a><br><br>
+                </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="properties">
+        <div class="property" data-price="170000" data-location="Bulawayo" data-bedrooms="4">
+            <div class="property-card">
+                 <!-- content -->
+                <div class="image-stack">
+                <img src="Project5.1.jpg" alt="image 1">
+                <img src="Project5.2.jpg" alt="image 2">
+                <img src="Project5.3.jpg" alt="image 3">
+                <img src="Project5.4.jpg" alt="image 4">
+                <img src="Project5.5.jpg" alt="image 5">
+                <img src="Project5.6.jpg" alt="image 6">
+                <img src="Project5.7.jpg" alt="image 7">
+                </div>
+                <h4>Hillside Residential Property</h4>
+                <p><ul>
+                    <li>Located in Hillside, Bulawayo</li>
+                    <li>Has 4 Bedrooms (2 en-suite)</li>
+                    <li>Situated on a 1,500sqm plot</li>
+                    <li>Has a spacious yard with a double lock garage</li>
+                    <li>Has a modern kitchen</li>
+                    <li>Has a open plan lounge and dining</li>
+                    <li>Has a 10kva solar system for energy efficiency</li>
+                    <li>Has a 60m boreholewith 5,000L storage tank and purification system</li>
+                </ul></p>
+                <p>Price: $170,000<br><br>
+                <a href="#contact" class="btn">Intrested</a><br><br>
+                </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="properties">
+        <div class="property" data-price="170000" data-location="Bulawayo" data-bedrooms="3">
+            <div class="property-card">
+                 <!-- content -->
+                <div class="image-stack">
+                <img src="Project6.1.jpg" alt="image 1">
+                <img src="Project6.2.jpg" alt="image 2">
+                <img src="Project6.3.jpg" alt="image 3">
+                <img src="Project6.4.jpg" alt="image 4">
+                <img src="Project6.5.jpg" alt="image 5">
+                <img src="Project6.6.jpg" alt="image 6">
+                <img src="Project6.7.jpg" alt="image 7">
+                </div>
+                <h4>Newly Built Residential Property</h4>
+                <p><ul>
+                    <li>Located in New Parklands, Bulawayo</li>
+                    <li>Has 3 Bedrooms (Master suite with en-suite)</li>
+                    <li>Generous living and dining areas</li>
+                    <li>Fully walled and gated perimeter, CCTV surveillance and on site guard room for peace of mind</li>
+                    <li>Situated on a 1,600sqm stand</li>
+                    <li>On-site borehole and solar-heated geyser to reduce utility costs</li>
+                </ul></p>
+                <p>Price: $170,000<br><br>
+                <a href="#contact" class="btn">Intrested</a><br><br>
+                </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Agent Profile-->
+     <div class="agent-profile">
+        <section id="agents">
+            <H1>Meet our Agent</H1><br><br>
+            <div class="agent-info">
+                <img src="ollie.jpg" alt="Agent Photo">
+                <div class="agent-details">
+                    <h3>~Tatenda Craig Ngaliwa</h3>
+                    <h4>Bio:</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, error. Voluptates, quam earum. Quis totam quos distinctio fugiat pariatur ratione voluptatem neque omnis magnam rem aut vitae, voluptatibus, placeat sequi.</p>
+                    <h4>Experience:</h4>
+                        5+ Years of experience in real estate.</p>
+                    <H4>Expertise:</H4>
+                        Residential and commercial properties.</p>
+                    <p>Get in Touch:</p>
+                        <p><a href="tel:0775847723" class="btn">Call me</a></p>
+                        <br>
+                        <p><a href="mailto:fleentproductions@gmail.com" class="btn">Email me</a></p>
+                </div>
+            </div>
+        </section>
+     </div>
+
+     <!-- Contact Us-->
+      <section id="contact">
+        <div class="contact-section">
+        <h1>Let's Work Together</h1>
+        <p>Send us a message, we'll respond within 24 hours.</p>
+        <form>
+            <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required /><br>
+            </div>
+            <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required /><br>
+            </div>
+            <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required /><br>
+            </div>
+            <div class="form-group">
+            <label for="message">Talk To Us:</label><br>
+            <textarea id="message" name="message" placeholder="Your Message.."></textarea><br><br>
+            </div>
+            <a href="mailto:olwethuchitotombe4684@gmail.com" class="btn" button type="submit">Send Message</a> 
+        </form>
+        </div><br><br>
+
+        <div class="social-media">
+        <h4>Follow Us</h4>
+      <p>
+      <ul>
+        <li>
+            linkedin
+        </li>
+        <li>
+            Instagram
+        </li>
+      </ul>
+      </p>
+      </div>
+
+</section>
+
+</body>
+<footer>
+    <P>&COPY; All Rights Reserved Zabrano Properties Pvt. Ltd.</P>
+    <p>&copy; This Website was designed and developed by Doodle Designs.</p>
+</footer>
+</html>

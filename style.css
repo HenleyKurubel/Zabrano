@@ -1,0 +1,351 @@
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+nav div a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+nav div a:hover {
+    text-decoration: underline;
+}
+
+#search-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#search-bar {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+
+#search-btn {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #e68a00;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #004080, #0073e6);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Section Headings */
+section h2 {
+    text-align: center;
+    margin: 30px 0 10px;
+    color: #004080;
+}
+
+section p, section ul {
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 0 10px;
+}
+
+.about-us {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.about-us h4 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+
+/* About Section Table */
+table {
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Vision */
+.vision-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.founder-info {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Filter Bar */
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}
+
+.filters select, .filters button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.filters button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #002f5f;
+}
+
+/* Properties Grid*/
+
+/* Container for all properties */
+.properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;   /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Individual card */
+.property-card {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Property image carousel */
+.image-stack {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.image-stack img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+/* Text content */
+.property-card h4 {
+    font-size: 18px;
+    color: #004080;
+    padding: 10px;
+    margin-bottom: 5px;
+    white-space: normal;
+}
+
+.property-card ul {
+    padding: 0 20px 10px;
+    list-style: disc;
+    display: block;
+}
+
+.property-card li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.property-card p {
+    padding: 0 20px 10px;
+    font-weight: bold;
+}
+
+.property-card .btn {
+    background-color: #004080;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 20px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.property-card .btn:hover {
+    background-color: #003366;
+}
+
+@media (max-width: 1000px) {
+    .property-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .property-card {
+        width: 90%;
+    }
+}
+
+/* Buttons */
+.btn {
+    background-color: #004080;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #003366;
+}
+
+/* Agent Profile */
+.agent-profile {
+    text-align: center;
+    justify-content: center;
+    background-color: #e6f0ff;
+    padding: 40px 20px;
+}
+
+.agent-profile h1 {
+    color: #004080;
+}
+
+.agent-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.agent-info img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.agent-details p {
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.social-media {
+    text-align: center;
+    justify-content: center;
+}
+
+.social-media h4 {
+    color: #004080;
+}
+
+/* footer */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 10px 0;
+}
